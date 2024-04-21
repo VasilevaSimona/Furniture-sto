@@ -1,0 +1,52 @@
+﻿@{ ViewData["Title"] = "Home Page"; }
+
+<style>
+    .text-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .button {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        color: black;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+
+    #tekst {
+        position: absolute;
+        top: 77%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+</style>
+
+<body style="background-color:darkgray">
+
+    <div class="text-center">
+        <link rel="stylesheet" href="C:\Users\Asus\Downloads\EShopApplication-master (1)\EShopApplication-master\EShop\EShop.Web\wwwroot\css\site.css" />
+        <img src="~/css/jholt_210624_126Dean_ADFinal_01.png" width="1470" />
+        <p id="tekst">Fluctuating and revolutionary nodules for any space to live</p>
+        <a class="button" asp-area="" asp-controller="Products" asp-action="Index">Shop living room furniture</a>
+
+
+    </div>
+
+</body>
+
+

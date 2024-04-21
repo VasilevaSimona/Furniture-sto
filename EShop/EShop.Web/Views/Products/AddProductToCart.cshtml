@@ -1,0 +1,30 @@
+﻿@model EShop.Domain.DTO.AddToShoppingCartDto
+
+@{
+    ViewData["Title"] = "Add to Shopping Cart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h3 class="text-center">Add Selected Product To Your Shopping Cart:</h3>
+
+<hr />
+
+<div class="row mt-4">
+    <div class="col-md-4 m-auto">
+        <form asp-action="AddProductToCart" method="post">
+            <input type="hidden" asp-for="ProductId"/>
+            <div class="form-group">
+                <label asp-for="SelectedProduct.ProductName"></label>
+                <input disabled asp-for="SelectedProduct.ProductName" class="form-control"/>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Quantity"></label>
+                <input asp-for="Quantity" class="form-control"/>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
